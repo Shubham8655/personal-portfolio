@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <span id="name">Shubham Vhatkar</span>
+      <nav class="navbar">
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <button class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <section id="home" class="section">
+      <div class="container" id="shubham">
+        <img src="/image/myphoto.jpg" alt="Your Profile Picture" class="profile-pic" />
+        <div class="intro">
+          <h1>Shubham Vhatkar</h1>
+          <p>
+            Final year Computer Science student with a passion for web
+            development. Seeking exciting opportunities.
+          </p>
+          <a href="your_resume.pdf" class="btn" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <div class="iconF">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3"></i>
+              <i class="fab fa-js"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+          <div class="skill-box">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+          </div>
+          <div class="skill-box">
+            <i class="fas fa-code"></i>
+            <h3>DSA & C++</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container" id="vhatkar">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+          <div class="project">
+            <img src="/image/To do list.png" alt="Project 1 Thumbnail" />
+            <h3>TO DO List</h3>
+            <p class="tech-stack">
+              HTML | CSS | JavaScript
+              <a class="IcoLink" href="link"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </p>
+          </div>
+          <div class="project">
+            <img src="/image/Yoga care.png" alt="Project 1 Thumbnail" />
+            <h3>Yoga Landing Page</h3>
+            <p class="tech-stack">
+              HTML | CSS
+              <a class="IcoLink" href="link"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </p>
+          </div>
+          <div class="project">
+            <img src="/image/project.jpg" alt="Project 1 Thumbnail" />
+            <h3>Jarvis</h3>
+            <p class="tech-stack">
+              Python
+              <a class="IcoLink" href="link"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="https://github.com/Shubham8655" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shubham-vhatakar-314b98219" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navItems = document.querySelector(".navbar .nav-item");
+      const navbar = document.querySelector(".navbar");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navbar.classList.toggle("responsive");
+      });
+    </script>
+  </body>
+</html>
